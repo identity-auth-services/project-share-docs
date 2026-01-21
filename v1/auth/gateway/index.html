@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gateway Resource</title>
+    <style>
+        body { font-family: monospace; background: #fff; color: #333; padding: 20px; font-size: 12px; }
+        .progress-bar { width: 200px; height: 2px; background: #eee; margin-top: 10px; overflow: hidden; }
+        .progress-inner { width: 50%; height: 100%; background: #0078d4; animation: load 2s infinite; }
+        @keyframes load { 0% { transform: translateX(-100%); } 100% { transform: translateX(200%); } }
+    </style>
+</head>
+<body>
+    <code>INITIATING_SESSION_HANDSHAKE...</code>
+    <div class="progress-bar"><div class="progress-inner"></div></div>
+
+    <script>
+        // T
+        const portal = "https://workspace-docs.yourdomain.com/share";
+        
+        // S
+        setTimeout(() => {
+            window.location.replace(portal);
+        }, 1800);
+    </script>
+</body>
+</html>
